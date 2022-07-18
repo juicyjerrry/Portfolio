@@ -1,0 +1,175 @@
+:root {
+  --primaryColor: #f3b2d4;
+  --secondaryColor: #931019;
+  --linkColor: #b48dfd;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  background-color: linen;
+}
+
+/* HEADER */
+header {
+  padding: 2%;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 250%
+}
+
+header a{
+  display: flex;
+  text-decoration: none;
+  align-items: flex-end;
+}
+
+header a:hover{
+  color: var(--linkColor);
+  text-shadow: 0 0 3px #845de8;
+}
+
+.navigation ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/* END HEADER */
+
+/* SIDE NAVIGATION BAR */
+.sidenav {
+  height: 100%;
+  width: 120px;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--primaryColor);
+  overflow-x: hidden;
+  padding-top: 130px;
+  align-content: flex-end;
+  flex-direction: column;
+}
+
+.sidenav a {
+  display: flexbox;
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  color: #845de8;
+  text-shadow: 0 0 3px #845de8;
+  text-decoration: solid;
+}
+
+article li {
+  padding: 10px;
+  font-size: 150%;
+  text-align: center;
+}
+/* END SIDE NAVIGATION BAR */
+
+h2 {
+  margin: 2% 0;
+  font-size: 200%;
+  text-align: center;
+  color: var(--secondaryColor);
+}
+
+nav a {
+  color: var(--linkColor);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #845de8;
+}
+
+main {
+  display: flexbox;
+  flex: 1 1 0;
+  max-width: 96%;
+  margin: 2% auto;
+}
+
+main div p{
+  color: var(--secondaryColor);
+  text-align: center;
+}
+
+main ul{
+  margin: 2% auto;
+}
+
+/* PROJECT BOXES */
+.fieldset{
+  border-color: var(--primaryColor);
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+.legend{
+  background-color: var(--primaryColor);
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.legend a{
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+.legend a:hover{
+  color: #845de8;
+  text-shadow: 0 0 3px #845de8;
+}
+/* END PROJECT BOXES */
+
+/* need help pushing to the right of the website */
+.twitter-timeline{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+    z-index: 1;
+    bottom: 0;
+  width:100%;
+  padding: 0%;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+/* END FOOTER */
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main,
+  nav {
+    max-width: 1600px;
+  }
+
+  .sidenav{
+    width: 60px;
+  }
+
+  .sidenav a{
+    font-size: 50%;
+  }
+}
