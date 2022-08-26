@@ -8,12 +8,27 @@ html {
   height: 100%;
 }
 
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  margin-left: 10px;
+}
+
 body {
   min-height: 100%;
   line-height: 1;
   font-family: sans-serif;
 }
 
+.profile {
+  width: 200px;
+  height: 200px;
+}
 
 h1,
 h2,
@@ -38,6 +53,7 @@ code {
 
 ol,
 ul {
+  display: flex;
   list-style: none;
   justify-content: space-around;
 }
